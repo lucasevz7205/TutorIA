@@ -1,0 +1,8 @@
+{
+  "name": "OmniStudy AI - Plataforma de Aprendizagem",
+  "description": "Aplicativo completo de estudo com método Feynman, repetição espaçada, flashcards inteligentes, simulados com IA e Pomodoro integrado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

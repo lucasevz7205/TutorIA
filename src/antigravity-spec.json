@@ -1,0 +1,78 @@
+{
+  "system_target": "OmniStudy AI",
+  "version": "2.0.0",
+  "description": "Especificação da Matriz de Prospectivas e Arquitetura de Aprendizado Ativo para o Antigravity Agent",
+  "ai_capabilities": {
+    "provider": "Google Gemini",
+    "primary_model": "gemini-3.8-flash",
+    "voice_model": "gemini-3.8-live",
+    "vision_model": "gemini-3.8-flash",
+    "security": "Server-side Express proxy with zero API key leakage"
+  },
+  "prospectives_matrix": [
+    {
+      "id": "TUTOR-AI",
+      "title": "Tutor Socrático Conversacional de IA",
+      "status": "IMPLEMENTED",
+      "impact": "Transformador",
+      "cognitive_benefit": "Elimina a ilusão de competência via questionamento ativo socrático",
+      "endpoint": "/api/gemini/tutor-chat",
+      "payload_example": {
+        "messages": [{ "role": "user", "text": "Explique entropia" }],
+        "mode": "socratic",
+        "subject": "Física Termodinâmica"
+      }
+    },
+    {
+      "id": "FEYNMAN-AI",
+      "title": "Diagnóstico Feynman de Compreensão",
+      "status": "IMPLEMENTED",
+      "impact": "Transformador",
+      "cognitive_benefit": "Desconstrói jargões desnecessários e gera analogias do cotidiano",
+      "endpoint": "/api/gemini/feynman-evaluate",
+      "payload_example": {
+        "topic": "Recursão",
+        "explanation": "Função que chama a si mesma até um caso base",
+        "targetAudience": "uma criança curiosa de 10 anos"
+      }
+    },
+    {
+      "id": "SRS-FLASHCARDS",
+      "title": "Repetição Espaçada com Geração Dinâmica de Baralhos",
+      "status": "IMPLEMENTED",
+      "impact": "Transformador",
+      "cognitive_benefit": "Achata a Curva do Esquecimento de Ebbinghaus através de Active Recall",
+      "endpoint": "/api/gemini/generate-flashcards"
+    },
+    {
+      "id": "CORNELL-NOTES",
+      "title": "Caderno Hierárquico Cornell com IA",
+      "status": "IMPLEMENTED",
+      "impact": "Muito Alto",
+      "cognitive_benefit": "Separa pistas de auto-teste de notas expositivas e síntese",
+      "endpoint": "/api/gemini/summarize-cornell"
+    },
+    {
+      "id": "BINAURAL-POMODORO",
+      "title": "Pomodoro Ultraniano com Áudio Procedural",
+      "status": "IMPLEMENTED",
+      "impact": "Muito Alto",
+      "cognitive_benefit": "Mantém foco sustentado e restauração de energia a cada 25 minutos",
+      "technology": "Web Audio API Procedural Synthesizer"
+    },
+    {
+      "id": "MULTIMODAL-VISION",
+      "title": "Digitalizador de Cadernos e Apostilas via Foto",
+      "status": "READY_TO_ACTIVATE",
+      "impact": "Transformador",
+      "antigravity_instruction": "Criar rota /api/gemini/scan-note para converter fotos em flashcards e Cornell notes"
+    },
+    {
+      "id": "LIVE-VOICE-TUTOR",
+      "title": "Banca Oral em Tempo Real com Gemini Live API",
+      "status": "PLANNED",
+      "impact": "Transformador",
+      "antigravity_instruction": "Configurar WebSocket bridge para streaming bidirecional de áudio PCM 16kHz"
+    }
+  ]
+}
